@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/mfycheng/name-dyndns/api"
-	"github.com/mfycheng/name-dyndns/dyndns"
-	"github.com/mfycheng/name-dyndns/log"
+	"github.com/tommedge/name-dyndns/api"
+	"github.com/tommedge/name-dyndns/dyndns"
+	"github.com/tommedge/name-dyndns/log"
 	"os"
 )
 

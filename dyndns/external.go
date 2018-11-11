@@ -4,6 +4,7 @@ import (
 	"errors"
 	"io/ioutil"
 	"net/http"
+	"strings"
 )
 
 // Urls contains a set of mirrors in which a
@@ -25,7 +26,7 @@ func tryMirror(url string) (string, error) {
 		return "", err
 	}
 
-	return string(contents), nil
+	return strings.TrimSpace(string(contents)), nil
 }
 
 // GetExternalIP retrieves the external facing IP Address.
