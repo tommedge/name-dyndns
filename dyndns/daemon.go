@@ -30,9 +30,9 @@ func contains(c api.Config, val string) bool {
 func updateDNSRecord(a api.API, domain, recordID string, newRecord api.DNSRecord) error {
 	log.Logger.Printf("Deleting DNS record for %s.\n", newRecord.Name)
 	err := a.DeleteDNSRecord(domain, newRecord.RecordID)
-	if err != nil {
-		return err
-	}
+	//if err != nil {
+	//	return err
+	//}
 
 	log.Logger.Printf("Creating DNS record for %s: %s\n", newRecord.Name, newRecord)
 
